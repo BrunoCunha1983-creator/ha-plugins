@@ -1,0 +1,15 @@
+configuration:
+  refresh_interval:
+    name: Refresh interval
+    description: Seconds between session checks and data updates. Effective minimum is 60 seconds.
+  watchdog_interval:
+    name: Watchdog interval
+    description: Seconds between checks that Chromium and the account page remain open. Effective minimum is 10 seconds.
+  vnc_password:
+    name: Chromium window password
+    description: Optional. When empty, the add-on Web UI has no additional VNC password.
+  log_level:
+    name: Log level
+    description: Amount of information written to the add-on log.
+network:
+  7900/tcp: Chromium window used to sign in to Pingo Doce
