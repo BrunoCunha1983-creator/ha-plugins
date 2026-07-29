@@ -1,13 +1,14 @@
 name: Pingo Doce — Sessão Persistente
-version: "1.0.0"
+version: "1.1.0"
 slug: pingo_doce_session
-description: Mantém a área pessoal do Pingo Doce aberta num Chromium persistente e publica os dados básicos no Home Assistant.
+description: Mantém a sessão do Pingo Doce num Chromium persistente e partilha os dados com a integração Pingo Doce Session.
 arch:
   - amd64
 startup: application
 boot: auto
 init: false
-homeassistant_api: true
+map:
+  - config:rw
 webui: "http://[HOST]:[PORT:7900]/vnc.html?autoconnect=true&resize=scale"
 ports:
   7900/tcp: 7900
