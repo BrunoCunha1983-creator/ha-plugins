@@ -1,0 +1,48 @@
+{
+  "title": "Pingo Doce Plus",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Pingo Doce Plus",
+        "description": "The integration connects automatically to the Pingo Doce Plus add-on. Start the add-on and complete the first login in its web interface.",
+        "data": {}
+      }
+    },
+    "abort": {"single_instance_allowed": "Pingo Doce Plus is already configured."}
+  },
+  "entity": {
+    "sensor": {
+      "status": {"name": "Status"},
+      "points": {"name": "Points"},
+      "balance": {"name": "Balance"},
+      "expiry_amount": {"name": "Expiring balance"},
+      "expiry_date": {"name": "Balance expiry"},
+      "expiry_message": {"name": "Expiry message"},
+      "active_orders": {"name": "Active orders"},
+      "current_order_number": {"name": "Current order number"},
+      "current_order_status": {"name": "Current order status"},
+      "current_order_delivery_window": {"name": "Delivery window"},
+      "current_order_progress": {"name": "Order progress"},
+      "last_order_number": {"name": "Last order number"},
+      "last_order_status": {"name": "Last order status"},
+      "last_order_total": {"name": "Last order total"},
+      "purchase_history_count": {"name": "Purchase history"},
+      "coupon_count": {"name": "Available coupons"},
+      "active_coupon_count": {"name": "Active coupons"},
+      "detected_words": {"name": "Detected words"},
+      "session_expiry": {"name": "Technical session expiry"},
+      "last_update": {"name": "Last update"}
+    },
+    "binary_sensor": {
+      "authenticated": {"name": "Authenticated session"},
+      "browser_running": {"name": "Browser running"},
+      "active_order": {"name": "Active order"},
+      "website_changed": {"name": "Order data changed"}
+    },
+    "button": {
+      "refresh": {"name": "Refresh"},
+      "open_login": {"name": "Open login"},
+      "restart_browser": {"name": "Restart browser"}
+    }
+  }
+}

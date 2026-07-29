@@ -1,0 +1,12 @@
+configuration:
+  refresh_interval:
+    name: Intervalo de atualização
+    description: Segundos entre atualizações automáticas.
+  watchdog_interval:
+    name: Intervalo do watchdog
+    description: Segundos entre verificações do Chromium.
+  vnc_password:
+    name: Palavra-passe da janela de login
+    description: Opcional.
+  log_level:
+    name: Nível de registo

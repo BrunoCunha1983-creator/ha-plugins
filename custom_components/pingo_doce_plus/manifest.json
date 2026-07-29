@@ -1,0 +1,11 @@
+{
+  "domain": "pingo_doce_plus",
+  "name": "Pingo Doce Plus",
+  "version": "2.0.0",
+  "config_flow": true,
+  "documentation": "https://github.com/BrunoCunha1983-creator/ha-plugins/tree/main/pingo-doce",
+  "issue_tracker": "https://github.com/BrunoCunha1983-creator/ha-plugins/issues",
+  "codeowners": ["@BrunoCunha1983-creator"],
+  "integration_type": "service",
+  "iot_class": "local_polling"
+}

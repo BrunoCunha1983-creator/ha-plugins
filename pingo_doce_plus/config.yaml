@@ -1,0 +1,31 @@
+name: Pingo Doce Plus
+version: "2.0.0"
+slug: pingo_doce_plus
+description: Login único, sessão persistente e dados do Pingo Doce para a integração Pingo Doce Plus.
+url: https://github.com/BrunoCunha1983-creator/ha-plugins/tree/main/pingo-doce
+arch:
+  - amd64
+startup: application
+boot: auto
+init: false
+map:
+  - type: homeassistant_config
+    read_only: false
+ingress: true
+ingress_port: 7900
+ingress_entry: /vnc.html?autoconnect=true&resize=scale
+panel_icon: mdi:cart
+ports:
+  7900/tcp: 7900
+ports_description:
+  7900/tcp: Janela Chromium para o primeiro login
+options:
+  refresh_interval: 180
+  watchdog_interval: 30
+  vnc_password: ""
+  log_level: info
+schema:
+  refresh_interval: int
+  watchdog_interval: int
+  vnc_password: password
+  log_level: list(debug|info|warning|error)

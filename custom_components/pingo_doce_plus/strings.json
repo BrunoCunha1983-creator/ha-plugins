@@ -1,0 +1,50 @@
+{
+  "title": "Pingo Doce Plus",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Pingo Doce Plus",
+        "description": "A integração liga-se automaticamente ao add-on Pingo Doce Plus. Inicie o add-on e faça o primeiro login pela respetiva interface Web.",
+        "data": {}
+      }
+    },
+    "abort": {
+      "single_instance_allowed": "A integração Pingo Doce Plus já está configurada."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "status": {"name": "Estado"},
+      "points": {"name": "Pontos"},
+      "balance": {"name": "Saldo"},
+      "expiry_amount": {"name": "Saldo a expirar"},
+      "expiry_date": {"name": "Validade do saldo"},
+      "expiry_message": {"name": "Mensagem de validade"},
+      "active_orders": {"name": "Encomendas ativas"},
+      "current_order_number": {"name": "Número da encomenda atual"},
+      "current_order_status": {"name": "Estado da encomenda atual"},
+      "current_order_delivery_window": {"name": "Janela de entrega"},
+      "current_order_progress": {"name": "Progresso da encomenda"},
+      "last_order_number": {"name": "Número da última encomenda"},
+      "last_order_status": {"name": "Estado da última encomenda"},
+      "last_order_total": {"name": "Total da última encomenda"},
+      "purchase_history_count": {"name": "Histórico de compras"},
+      "coupon_count": {"name": "Cupões disponíveis"},
+      "active_coupon_count": {"name": "Cupões ativos"},
+      "detected_words": {"name": "Palavras detetadas"},
+      "session_expiry": {"name": "Validade técnica da sessão"},
+      "last_update": {"name": "Última atualização"}
+    },
+    "binary_sensor": {
+      "authenticated": {"name": "Sessão autenticada"},
+      "browser_running": {"name": "Navegador ativo"},
+      "active_order": {"name": "Encomenda em curso"},
+      "website_changed": {"name": "Dados da encomenda alterados"}
+    },
+    "button": {
+      "refresh": {"name": "Atualizar"},
+      "open_login": {"name": "Abrir login"},
+      "restart_browser": {"name": "Reiniciar navegador"}
+    }
+  }
+}

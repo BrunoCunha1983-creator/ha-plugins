@@ -1,0 +1,11 @@
+refresh:
+  name: Atualizar
+  description: Atualiza imediatamente os dados do Pingo Doce Plus.
+
+open_login:
+  name: Abrir login
+  description: Abre e coloca em primeiro plano a área pessoal do Pingo Doce no Chromium do add-on.
+
+restart_browser:
+  name: Reiniciar navegador
+  description: Reinicia o Chromium mantendo o perfil e a sessão guardados.
