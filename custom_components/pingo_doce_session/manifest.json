@@ -6,5 +6,6 @@
   "documentation": "https://github.com/BrunoCunha1983-creator/ha-plugins/tree/main/custom_components/pingo_doce_session",
   "issue_tracker": "https://github.com/BrunoCunha1983-creator/ha-plugins/issues",
   "codeowners": ["@BrunoCunha1983-creator"],
+  "integration_type": "service",
   "iot_class": "local_polling"
 }
