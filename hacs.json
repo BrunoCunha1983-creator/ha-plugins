@@ -1,6 +1,5 @@
 {
-  "name": "Pingo Doce Session",
-  "content_in_root": false,
-  "render_readme": false,
-  "homeassistant": "2025.1.0"
+  "name": "Pingo Doce Plus",
+  "render_readme": true,
+  "homeassistant": "2026.6.0"
 }

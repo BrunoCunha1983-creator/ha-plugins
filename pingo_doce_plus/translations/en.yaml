@@ -1,0 +1,9 @@
+configuration:
+  refresh_interval:
+    name: Refresh interval
+  watchdog_interval:
+    name: Watchdog interval
+  vnc_password:
+    name: Login window password
+  log_level:
+    name: Log level
