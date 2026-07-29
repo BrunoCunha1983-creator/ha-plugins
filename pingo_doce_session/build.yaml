@@ -1,2 +1,0 @@
-build_from:
-  amd64: mcr.microsoft.com/playwright/python:v1.50.0-noble
