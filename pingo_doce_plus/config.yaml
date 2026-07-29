@@ -1,8 +1,8 @@
 name: Pingo Doce Plus
-version: "2.0.0"
-slug: pingo_doce_plus
+version: "2.0.1"
+slug: pingo_doce_session
 description: Login único, sessão persistente e dados do Pingo Doce para a integração Pingo Doce Plus.
-url: https://github.com/BrunoCunha1983-creator/ha-plugins/tree/main/pingo-doce
+url: https://github.com/BrunoCunha1983-creator/ha-plugins/tree/main/pingo_doce_plus
 arch:
   - amd64
 startup: application
@@ -11,10 +11,7 @@ init: false
 map:
   - type: homeassistant_config
     read_only: false
-ingress: true
-ingress_port: 7900
-ingress_entry: /vnc.html?autoconnect=true&resize=scale
-panel_icon: mdi:cart
+webui: "http://[HOST]:[PORT:7900]/vnc.html?autoconnect=true&resize=scale&path=websockify"
 ports:
   7900/tcp: 7900
 ports_description:
