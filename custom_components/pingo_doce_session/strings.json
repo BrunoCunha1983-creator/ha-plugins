@@ -1,0 +1,47 @@
+{
+  "title": "Pingo Doce Session",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Ligar ao add-on Pingo Doce",
+        "description": "O add-on deve estar instalado e iniciado.",
+        "data": {
+          "shared_path": "Pasta partilhada"
+        }
+      }
+    },
+    "abort": {
+      "single_instance_allowed": "A integração já está configurada."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Opções",
+        "data": {
+          "shared_path": "Pasta partilhada"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "status": {"name": "Estado"},
+      "points": {"name": "Pontos"},
+      "balance": {"name": "Saldo"},
+      "expiry_amount": {"name": "Saldo a expirar"},
+      "expiry_date": {"name": "Validade do saldo"},
+      "expiry_message": {"name": "Mensagem de validade"},
+      "last_update": {"name": "Última atualização"}
+    },
+    "binary_sensor": {
+      "authenticated": {"name": "Sessão autenticada"},
+      "cookie_available": {"name": "Cookie disponível"}
+    },
+    "button": {
+      "refresh": {"name": "Atualizar"},
+      "export_cookies": {"name": "Exportar cookies"},
+      "copy_cookie": {"name": "Copiar cookie"}
+    }
+  }
+}

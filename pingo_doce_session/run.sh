@@ -2,7 +2,7 @@
 set -euo pipefail
 
 export DISPLAY="${DISPLAY:-:99}"
-mkdir -p /data/chromium-profile /data/session /tmp/.X11-unix
+mkdir -p /data/chromium-profile /data/session /config/pingo_doce_session /tmp/.X11-unix
 
 DISPLAY_NUM="${DISPLAY#:}"
 rm -f "/tmp/.X${DISPLAY_NUM}-lock" \
@@ -44,8 +44,11 @@ fi
 
 websockify --web=/usr/share/novnc/ 7900 127.0.0.1:5900 > /tmp/novnc.log 2>&1 &
 
+python -m app.bridge &
+BRIDGE_PID=$!
+
 cleanup() {
-  kill "${XVFB_PID}" 2>/dev/null || true
+  kill "${BRIDGE_PID}" "${XVFB_PID}" 2>/dev/null || true
 }
 trap cleanup EXIT INT TERM
 

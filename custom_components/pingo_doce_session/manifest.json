@@ -1,0 +1,11 @@
+{
+  "domain": "pingo_doce_session",
+  "name": "Pingo Doce Session",
+  "version": "1.1.0",
+  "config_flow": true,
+  "documentation": "https://github.com/BrunoCunha1983-creator/ha-plugins/tree/main/custom_components/pingo_doce_session",
+  "issue_tracker": "https://github.com/BrunoCunha1983-creator/ha-plugins/issues",
+  "codeowners": ["@BrunoCunha1983-creator"],
+  "integration_type": "service",
+  "iot_class": "local_polling"
+}

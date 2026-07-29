@@ -1,10 +1,12 @@
 # Changelog
 
+## 1.1.0
+
+- Adiciona comunicação direta com a custom integration `pingo_doce_session`.
+- Exporta estado, cookie HTTP e cookies JSON para `/config/pingo_doce_session`.
+- Adiciona comandos de atualização e exportação de cookies.
+- Remove a necessidade de copiar cookies manualmente para a nova integração.
+
 ## 1.0.0
 
-- Primeira versão como add-on único do Home Assistant.
-- Chromium visível por noVNC.
-- Perfil e cookies persistentes.
-- Watchdog da página e do navegador.
-- Publicação direta de quatro entidades básicas no Home Assistant.
-- Sem custom integration e sem serviços externos.
+- Primeira versão.
