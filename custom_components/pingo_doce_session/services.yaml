@@ -1,0 +1,19 @@
+refresh:
+  name: Atualizar
+  description: Pede ao add-on uma atualização imediata.
+
+export_cookies:
+  name: Exportar cookies
+  description: Atualiza os ficheiros locais da cookie HTTP e dos cookies JSON.
+
+get_cookie:
+  name: Obter cookie
+  description: Devolve a cookie HTTP e os cookies JSON como resposta da ação.
+  fields:
+    show_notification:
+      name: Mostrar notificação
+      description: Mostra a cookie numa notificação persistente para poder ser copiada.
+      required: false
+      default: false
+      selector:
+        boolean:
